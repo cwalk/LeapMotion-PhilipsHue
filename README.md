@@ -41,6 +41,12 @@ How to find the username: http://www.developers.meethue.com/documentation/gettin
 
 Run the files by using the command `node filename.js`
 
+## WARNING
+
+An important warning, is that some of the code associated with using the Leap Motion + the Philips Hue lights is a little buggy. This means it might not always run the first time perfectly, so keep re-trying to get a good connection. Sometimes it will even "timeout" and you will have to run the script again.
+
+My reasoning behind this is because there is a lot of network communication going on. Basically because the Leap Motion doesn't have it's own processor, it just sends a bunch of data to your computer. Your computer then has to send that data to the router the Bridge is connected on, through the JavaScript file. Then, the router relays that to the Bridge through a hardwired connection. Then the Bridge finally sends that info to the lights, through the Xigbee protocol. So theres a lot of "inbetweens" that are necessary to send the data from the Leap, to be interpretted by the code on your computer, to perform actions from the lights.
+
 ## blink
 
 `blink.js` will simply connect to 1 light, and toggle it on and off, through JavaScript.
@@ -100,4 +106,12 @@ Supported Gestures:
 
 ## leapCircle
 
-`leapCircle.js` is my personal favorite program written for interaction between the Leap Motion and the Philips Hue. 
+`leapCircle.js` is my personal favorite program written for interaction between the Leap Motion and the Philips Hue.
+
+In this program, I set the lights up around the room in a circle. I then programmed to turn on a specific light if my hand was in that area of space over the Leap Motion. So if the light was directly in front of me, I programmed it so when my hand is directly in front of the Leap Motion, only that light would turn on.
+
+The lights were placed around the room in a circle, so I basically had a control set up like in the diagram below. Where I could move my hand in a giant circle over the Leap to turn on all the lights in the room, in a sort of magical effect. You can also point at individual lights, and they should turn on (because your hand is over the leap in the same direction the light is placed in the room).
+
+When your hand exits the view of the Leap, all the lights will turn off.
+
+![Leap Circle Diagram](/Leap Circle.jpg?raw=true "Leap Circle Diagram")
