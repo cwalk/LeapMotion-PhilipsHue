@@ -16,7 +16,7 @@ This is all using the V2 Desktop (and was developed on OSX Yosemite).
 
 Install cylonjs, a robotics javascript framework. More info here: https://cylonjs.com
 
-Clone the directory: `git clone https://github.com/cwalk/LeapMotion-General/`
+Clone the directory: `git clone https://github.com/cwalk/LeapMotion-PhilipsHue`
 
 Navigate to the directory and do an `npm install` and you should have cylon, cylon-leapmotion, and cylon-hue in node_modules.
 
