@@ -4,7 +4,7 @@ Leap Motion projects with Philips Hue lights
 
 ## YouTube
 
-YouTube: 
+YouTube: https://www.youtube.com/watch?v=ghNnTjDSs4w
 
 ## Code Setup
 
