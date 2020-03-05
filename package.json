@@ -15,6 +15,6 @@
   "dependencies": {
     "cylon": "^1.2.0",
     "cylon-hue": "^0.7.0",
-    "cylon-leapmotion": "^0.20.0",
+    "cylon-leapmotion": "^0.20.0"
   }
 }
